@@ -1,4 +1,4 @@
-.filter-button {
+.filter__button {
   padding: 6px 22px;
   border: 0;
   border-radius: 4px;
@@ -36,13 +36,13 @@
   padding-bottom: var(--section-pb);
 }
 
-.filter-list {
+.filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.filter-list-button {
+.filter__item {
   display: flex;
 
   &:not(:last-child) {

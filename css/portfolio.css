@@ -138,7 +138,7 @@ header .logo {
   color: var(--main-color-white);
 }
 
-.filter-button {
+.filter__button {
   padding: 6px 22px;
   border: 0;
   border-radius: 4px;
@@ -152,7 +152,7 @@ header .logo {
   transition: background-color var(--animation), color var(--animation), box-shadow var(--animation);
 }
 
-.filter-button:focus, .filter-button:hover {
+.filter__button:focus, .filter__button:hover {
   background-color: var(--accent-color);
   color: var(--main-color-white);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -170,17 +170,17 @@ header .logo {
   padding-bottom: var(--section-pb);
 }
 
-.filter-list {
+.filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.filter-list-button {
+.filter__item {
   display: flex;
 }
 
-.filter-list-button:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -191,7 +191,7 @@ header .logo {
   margin-left: -30px;
 }
 
-.project-list-item {
+.project-list__item {
   display: flex;
   flex-direction: column;
   flex-basis: calc(100% / 4 - 30px);
@@ -199,23 +199,23 @@ header .logo {
   margin-left: 30px;
 }
 
-.project-list-link {
+.project-list__link {
   transition: box-shadow var(--animation);
 }
 
-.project-list-link:hover, .project-list-link:focus {
+.project-list__link:hover, .project-list__link:focus {
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-list-item-wrapper {
+.project-item-wrapper {
   padding: 20px 24px;
   background-color: var(--bg-color-white);
   border: 1px solid #eeeeee;
   border-top: none;
 }
 
-.project-title {
+.project-item-wrapper__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -223,19 +223,19 @@ header .logo {
   color: var(--main-color);
 }
 
-.project-text {
+.project-item-wrapper__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   color: #757575;
 }
 
-.project-list-link-wrapper {
+.project-link-wrapper {
   position: relative;
   overflow: hidden;
 }
 
-.overlay {
+.project-link-wrapper__overlay {
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 18px;
@@ -253,8 +253,8 @@ header .logo {
   transition: transform var(--animation), opacity var(--animation);
 }
 
-.project-list-link:hover .overlay,
-.project-list-link:focus .overlay {
+.project-list__link:hover .project-link-wrapper__overlay,
+.project-list__link:focus .project-link-wrapper__overlay {
   transform: translateY(0%);
   opacity: 1;
 }
