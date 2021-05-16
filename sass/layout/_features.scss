@@ -19,10 +19,10 @@
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-top: 30px;
-}
 
-.feature-list-item .feature-title {
-  margin-bottom: 10px;
+  & .feature-title {
+    margin-bottom: 10px;
+  }
 }
 
 .feature-list {

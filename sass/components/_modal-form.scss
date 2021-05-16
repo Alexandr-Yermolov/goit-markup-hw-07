@@ -97,20 +97,19 @@
   border-radius: 2px;
   cursor: pointer;
   margin-right: 7px;
-}
 
-.modal-form-term:checked + .modal-form-check-desc::before {
-  background-image: url(../images/modal/check.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-}
-
-.modal-form-term:focus + .modal-form-check-desc::before {
-  /* outline: 1px solid var(--accent-color); */
-  box-shadow: 0 0 0 2px var(--accent-color);
+  .modal-form-term:checked + & {
+    background-image: url(../images/modal/check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+  .modal-form-term:focus + & {
+    /* outline: 1px solid var(--accent-color); */
+    box-shadow: 0 0 0 2px var(--accent-color);
+  }
 }
 
 .modal-form-link {
@@ -134,9 +133,9 @@
   background-color: var(--accent-color);
   color: var(--main-color-white);
   transition: background-color var(--animation);
-}
 
-.modal-form-btn:focus,
-.modal-form-btn:hover {
-  background-color: rgb(24, 140, 232);
+  &:focus,
+  &:hover {
+    background-color: rgb(24, 140, 232);
+  }
 }

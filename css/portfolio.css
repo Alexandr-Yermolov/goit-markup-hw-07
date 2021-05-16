@@ -118,8 +118,7 @@ img {
   transition: background-color var(--animation), color var(--animation), box-shadow var(--animation);
 }
 
-.filter-button:focus,
-.filter-button:hover {
+.filter-button:focus, .filter-button:hover {
   background-color: var(--accent-color);
   color: var(--main-color-white);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -143,12 +142,12 @@ img {
   margin-bottom: 50px;
 }
 
-.filter-list-button:not(:last-child) {
-  margin-right: 8px;
-}
-
 .filter-list-button {
   display: flex;
+}
+
+.filter-list-button:not(:last-child) {
+  margin-right: 8px;
 }
 
 .project-list {
@@ -170,10 +169,15 @@ img {
   transition: box-shadow var(--animation);
 }
 
-.project-list-link:hover,
-.project-list-link:focus {
+.project-list-link:hover, .project-list-link:focus {
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project-list-link:hover .overlay,
+.project-list-link:focus .overlay {
+  transform: translateY(0%);
+  opacity: 1;
 }
 
 .project-list-item-wrapper {
@@ -221,16 +225,23 @@ img {
   transition: transform var(--animation), opacity var(--animation);
 }
 
-.project-list-link:hover .overlay,
-.project-list-link:focus .overlay {
-  transform: translateY(0%);
-  opacity: 1;
+header {
+  background-color: var(--bg-color-white);
+  border: 1px solid #ececec;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
 }
 
-.header .logo {
+header .logo {
   margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
 }
 
 .navigation {
@@ -243,15 +254,15 @@ img {
   align-items: center;
 }
 
+.navigation-list .current {
+  position: relative;
+  color: var(--accent-color);
+}
+
 .contact-header {
   display: flex;
   align-items: center;
   margin-left: auto;
-}
-
-.header .container {
-  display: flex;
-  align-items: center;
 }
 
 .contact-header-list {
@@ -259,32 +270,17 @@ img {
   align-items: center;
 }
 
+.contact-header-list:not(:last-child) {
+  margin-right: 50px;
+}
+
 .contact-svg-logo {
   margin-right: 10px;
   transition: fill var(--animation);
 }
 
-.contact-header-list:not(:last-child) {
-  margin-right: 50px;
-}
-
 .navigation-item:not(:last-child) {
   margin-right: 50px;
-}
-
-header {
-  background-color: var(--bg-color-white);
-  border: 1px solid #ececec;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-}
-
-.navigation-link:hover,
-.navigation-link:focus,
-.contact-header-link:hover,
-.contact-header-link:focus {
-  color: var(--accent-color);
 }
 
 .navigation-link {
@@ -298,9 +294,8 @@ header {
   transition: color var(--animation);
 }
 
-.contact-header-link:focus svg,
-.contact-header-link:hover svg {
-  fill: var(--accent-color);
+.navigation-link:hover, .navigation-link:focus {
+  color: var(--accent-color);
 }
 
 .contact-header-link {
@@ -319,9 +314,13 @@ header {
   transition: color var(--animation);
 }
 
-.navigation-list .current {
-  position: relative;
+.contact-header-link:hover, .contact-header-link:focus {
   color: var(--accent-color);
+}
+
+.contact-header-link:focus svg,
+.contact-header-link:hover svg {
+  fill: var(--accent-color);
 }
 
 .footer {
@@ -334,6 +333,11 @@ header {
   margin-bottom: 20px;
 }
 
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
 .contact-address {
   font-family: var(--main-font);
   font-weight: 400;
@@ -341,6 +345,10 @@ header {
   line-height: 1.71;
   color: var(--main-color-white);
   margin-bottom: 9px;
+}
+
+.contact-address:hover, .contact-address:focus {
+  color: var(--accent-color);
 }
 
 .contact-list-link {
@@ -351,10 +359,7 @@ header {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.contact-list-link:hover,
-.contact-list-link:focus,
-.contact-address:hover,
-.contact-address:focus {
+.contact-list-link:hover, .contact-list-link:focus {
   color: var(--accent-color);
 }
 
@@ -383,6 +388,10 @@ header {
   transition: background-color var(--animation);
 }
 
+.social-link-item:hover, .social-link-item:focus {
+  background-color: var(--accent-color);
+}
+
 .contact-social-item:not(:last-child) {
   margin-right: 10px;
 }
@@ -398,16 +407,6 @@ header {
 
 .social-link-svg {
   fill: var(--icon-background-color);
-}
-
-.footer .container {
-  display: flex;
-  align-items: baseline;
-}
-
-.social-link-item:hover,
-.social-link-item:focus {
-  background-color: var(--accent-color);
 }
 
 .footer-input {
