@@ -7,4 +7,14 @@
   letter-spacing: 0.03em;
 
   color: var(--main-color);
+
+  .customers & {
+    margin-bottom: 50px;
+  }
+  .team-sections & {
+    margin-bottom: 50px;
+  }
+  .what-are-we-doing & {
+    margin-bottom: 50px;
+  }
 }

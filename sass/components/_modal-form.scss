@@ -18,9 +18,7 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 1.16;
-
   letter-spacing: 0.01em;
-
   color: rgb(117, 117, 117);
 }
 
@@ -37,11 +35,11 @@
   border-radius: 4px;
   padding-left: 42px;
   transition: border-color var(--animation);
-}
 
-.modal-form-input:focus {
-  outline: none;
-  border-color: var(--accent-color);
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
 }
 
 .modal-form-icon {
@@ -51,10 +49,10 @@
   transform: translateY(-50%);
   display: block;
   transition: fill var(--animation);
-}
 
-.modal-form-input:focus + .modal-form-icon {
-  fill: var(--accent-color);
+  .modal-form-input:focus + & {
+    fill: var(--accent-color);
+  }
 }
 
 .modal-form-message {
@@ -67,15 +65,14 @@
   margin-top: 4px;
   resize: none;
   transition: border-color var(--animation);
-}
 
-.modal-form-message::placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.modal-form-message:focus {
-  outline: none;
-  border-color: var(--accent-color);
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
 }
 
 .modal-form-check-desc {
@@ -85,9 +82,9 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin-top: 20px;
-
-  color: #757575;
+  color: rgb(117, 117, 117);
 }
+
 .modal-form-check-desc::before {
   display: block;
   content: "";

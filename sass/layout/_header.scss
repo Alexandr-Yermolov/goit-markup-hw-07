@@ -4,16 +4,6 @@ header {
   border-top: 0;
   border-left: 0;
   border-right: 0;
-
-  & .logo {
-    margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 25px;
-  }
-  & .container {
-    display: flex;
-    align-items: center;
-  }
 }
 
 .navigation {
@@ -24,11 +14,6 @@ header {
 .navigation-list {
   display: flex;
   align-items: center;
-
-  & .current {
-    position: relative;
-    color: var(--accent-color);
-  }
 }
 
 .contact-header {
