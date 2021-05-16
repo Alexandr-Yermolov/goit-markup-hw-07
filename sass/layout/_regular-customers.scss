@@ -8,7 +8,7 @@
   justify-content: space-between;
 }
 
-.container-link {
+.customers-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,12 +25,12 @@
   }
 }
 
-.container-customers-logo {
+.customers-list__logo {
   fill: var(--icon-color-passive);
   transition: fill var(--animation);
 
-  .container-link:hover &,
-  .container-link:focus & {
+  .customers-list__link:hover &,
+  .customers-list__link:focus & {
     fill: var(--accent-color);
   }
 }
