@@ -1,4 +1,4 @@
-.feature-list-logo-svg {
+.feature-list__logo-svg {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,14 +13,10 @@
   padding-top: var(--section-pt);
   padding-bottom: var(--section-pb);
 }
-.feature-list-item {
+.feature-list__item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-top: 30px;
-
-  & .feature-title {
-    margin-bottom: 10px;
-  }
 }
 
 .feature-list {
@@ -31,15 +27,19 @@
   margin-top: -30px;
 }
 
-.feature-title {
+.feature-list__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--main-color);
+
+  .feature-list__item & {
+    margin-bottom: 10px;
+  }
 }
 
-.features-text {
+.feature-list__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;

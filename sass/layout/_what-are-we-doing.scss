@@ -9,7 +9,7 @@
   margin-top: -30px;
 }
 
-.services-list-item {
+.services-list__item {
   position: relative;
   display: flex;
   flex-basis: calc(100% / 4 - 30px);
@@ -17,7 +17,7 @@
   margin-top: 30px;
 }
 
-.label {
+.services-list__label {
   position: absolute;
   bottom: 0;
   margin: 0;
