@@ -389,7 +389,7 @@ header {
   margin-bottom: 20px;
 }
 
-.social-link-item {
+.footer__social-link-item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -400,11 +400,11 @@ header {
   transition: background-color var(--animation);
 }
 
-.social-link-item:hover, .social-link-item:focus {
+.footer__social-link-item:hover, .footer__social-link-item:focus {
   background-color: var(--accent-color);
 }
 
-.contact-social-item:not(:last-child) {
+.footer__contact-item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -413,19 +413,19 @@ header {
   margin-right: 30px;
 }
 
-.contact-list-social-link {
+.footer__contact-link {
   display: flex;
 }
 
-.social-link-svg {
+.footer__social-link-svg {
   fill: var(--icon-background-color);
 }
 
-.footer-input {
+.footer__input {
   width: 570px;
 }
 
-.footer-input-text {
+.input__text {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 14px;
@@ -434,16 +434,19 @@ header {
   color: var(--main-color-white);
 }
 
-.footer-form-btn-svg {
+.footer__btn-svg {
   margin-left: 10px;
 }
 
-.footer-input-email {
+.input__email {
   display: flex;
+}
+
+.footer__email {
   margin-top: 20px;
 }
 
-.footer-input-form {
+.input__form {
   background: transparent;
   display: flex;
   width: 358px;
@@ -457,27 +460,30 @@ header {
   cursor: pointer;
 }
 
-.footer-input-form:focus {
+.input__form:focus {
   outline: none;
   border-color: var(--accent-color);
 }
 
-.footer-form-btn {
+.input__form-btn {
   display: flex;
   justify-content: center;
   align-items: center;
   min-width: 200px;
-  margin-left: 12px;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
-  padding: 8px 26px;
   cursor: pointer;
   color: var(--main-color-white);
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: var(--accent-color);
+}
+
+.footer__form-btn {
+  margin-left: 12px;
+  padding: 8px 26px;
 }
 /*# sourceMappingURL=portfolio.css.map */
