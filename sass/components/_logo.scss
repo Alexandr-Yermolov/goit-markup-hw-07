@@ -16,11 +16,12 @@
     text-transform: uppercase;
     color: var(--main-color-white);
   }
-  header & {
-    margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 25px;
-  }
+}
+
+.header__logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo__first-part {

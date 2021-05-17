@@ -116,7 +116,7 @@ header .container {
   color: var(--main-color-white);
 }
 
-header .logo {
+.header__logo {
   margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
@@ -364,18 +364,42 @@ header {
   align-items: center;
 }
 
-.contact-header {
+.menu__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.menu__link:hover, .menu__link:focus {
+  color: var(--accent-color);
+}
+
+.header__link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--main-color);
+}
+
+.header__link_animation {
+  transition: color var(--animation);
+}
+
+.contact {
   display: flex;
   align-items: center;
+}
+
+.header__contact {
   margin-left: auto;
 }
 
-.contact-header-list {
+.contact__list {
   display: flex;
   align-items: center;
 }
 
-.contact-header-list:not(:last-child) {
+.contact__list:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -388,22 +412,7 @@ header {
   margin-right: 50px;
 }
 
-.menu__link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--main-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
-  transition: color var(--animation);
-}
-
-.menu__link:hover, .menu__link:focus {
-  color: var(--accent-color);
-}
-
-.contact-header-link {
+.contact__link {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -416,27 +425,33 @@ header {
   color: #757575;
   padding-top: 32px;
   padding-bottom: 32px;
-  transition: color var(--animation);
 }
 
-.contact-header-link:hover, .contact-header-link:focus {
+.contact__link:hover, .contact__link:focus {
   color: var(--accent-color);
 }
 
-.contact-header-link:focus svg,
-.contact-header-link:hover svg {
+.contact__link:focus svg,
+.contact__link:hover svg {
   fill: var(--accent-color);
 }
 
+.contact__link_animation {
+  transition: color var(--animation);
+}
+
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
   background-color: #2f303a;
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/geroy/geroy.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 1600px;
+}
+
+.hero__section {
+  padding-top: 200px;
+  padding-bottom: 200px;
   margin: 0 auto;
 }
 
