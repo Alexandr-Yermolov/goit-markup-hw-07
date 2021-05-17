@@ -152,10 +152,6 @@ header .container {
   margin-bottom: 50px;
 }
 
-.team-sections .title {
-  margin-bottom: 50px;
-}
-
 .modal {
   position: absolute;
   top: 50%;
@@ -575,10 +571,14 @@ header {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.team-sections {
+.team {
   background-color: #f5f4fa;
   padding-top: var(--section-pt);
   padding-bottom: var(--section-pb);
+}
+
+.team__title {
+  margin-bottom: 50px;
 }
 
 .wrapper-team {

@@ -1,7 +1,10 @@
-.team-sections {
+.team {
   background-color: rgb(245, 244, 250);
   padding-top: var(--section-pt);
   padding-bottom: var(--section-pb);
+}
+.team__title {
+  margin-bottom: 50px;
 }
 
 .wrapper-team {
